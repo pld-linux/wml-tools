@@ -2,7 +2,7 @@ Summary:	Utilities for handling WML/WBMP files
 Summary(pl):	Programy do obs³ugi plików WML/WBMP
 Name:		wml-tools
 Version:	0.0.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://pwot.org/wml/%{name}-%{version}.tgz
