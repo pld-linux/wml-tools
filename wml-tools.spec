@@ -5,9 +5,9 @@ Version:	0.0.4
 Release:	1
 License:	GPL
 Group:		Applications/Networking
-URL:		http://pwot.org/wml/
 Source0:	http://pwot.org/wml/%{name}-%{version}.tgz
 # Source0-md5:	a888ff9611ab735b4c02fa534bbcebbf
+URL:		http://pwot.org/wml/
 BuildRequires:	libxml-devel
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -20,21 +20,22 @@ included as a bonus is a Netscape RDF to WML deck converter. Vital to
 get the /. headlines on your WAP device.
 
 %description -l pl
-Pakiet zawiera przegl±darkê WBMP, prosty dekoder bytecode WML, prost±
+Pakiet zawiera przegl±darkê WBMP, prosty dekoder bytecodu WML, prost±
 przegl±darkê WML oraz kompilator WML do HTML. Jako dodatek jest
 do³±czony konwerter plików RDF na WML. Pomo¿e w przegl±daniu
-wiadomo¶ci ze /. na twoim urz±dzeniu WAP.
+wiadomo¶ci ze /. na urz±dzeniu WAP.
 
 %prep
 %setup -q -n %{name}
 
 %build
-./configure --cc-flags "$RPM_OPT_FLAGS"
+./configure --cc-flags "%{rpmcflags}"
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 for i in rdfwml wmlc wmld wmlhtml wmlv; do
 	install $i/$i $RPM_BUILD_ROOT%{_bindir}
 	install $i/README README.$i
@@ -47,6 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README WAP GOTCHAS Changelog README.{rdfwml,wbmp,wmlc,wmld,wmlhtml,wmlv}
 %attr(755,root,root) %{_bindir}/*
-%doc README WAP GOTCHAS Changelog
-%doc README.{rdfwml,wbmp,wmlc,wmld,wmlhtml,wmlv}
