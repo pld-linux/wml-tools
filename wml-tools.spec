@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/Networking
 URL:		http://pwot.org/wml/
 Source0:	http://pwot.org/wml/%{name}-%{version}.tgz
+# Source0-md5:	a888ff9611ab735b4c02fa534bbcebbf
 BuildRequires:	libxml-devel
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
