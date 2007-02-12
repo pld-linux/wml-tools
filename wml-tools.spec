@@ -1,5 +1,5 @@
 Summary:	Utilities for handling WML/WBMP files
-Summary(pl):	Programy do obs³ugi plików WML/WBMP
+Summary(pl.UTF-8):   Programy do obsÅ‚ugi plikÃ³w WML/WBMP
 Name:		wml-tools
 Version:	0.0.4
 Release:	2
@@ -19,11 +19,11 @@ WML deck viewer and a tempremental WML to HTML converter. Also
 included as a bonus is a Netscape RDF to WML deck converter. Vital to
 get the /. headlines on your WAP device.
 
-%description -l pl
-Pakiet zawiera przegl±darkê WBMP, prosty dekoder bytecodu WML, prost±
-przegl±darkê WML oraz kompilator WML do HTML. Jako dodatek jest
-do³±czony konwerter plików RDF na WML. Pomo¿e w przegl±daniu
-wiadomo¶ci ze /. na urz±dzeniu WAP.
+%description -l pl.UTF-8
+Pakiet zawiera przeglÄ…darkÄ™ WBMP, prosty dekoder bytecodu WML, prostÄ…
+przeglÄ…darkÄ™ WML oraz kompilator WML do HTML. Jako dodatek jest
+doÅ‚Ä…czony konwerter plikÃ³w RDF na WML. PomoÅ¼e w przeglÄ…daniu
+wiadomoÅ›ci ze /. na urzÄ…dzeniu WAP.
 
 %prep
 %setup -q -n %{name}
