@@ -1,5 +1,5 @@
 Summary:	Utilities for handling WML/WBMP files
-Summary(pl.UTF-8):   Programy do obsługi plików WML/WBMP
+Summary(pl.UTF-8):	Programy do obsługi plików WML/WBMP
 Name:		wml-tools
 Version:	0.0.4
 Release:	2
